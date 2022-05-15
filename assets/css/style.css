@@ -135,11 +135,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .project-card a {
-    border:5px solid var(--primary-color);
-    margin-bottom: 40px;
+    border: 5px solid var(--primary-color);
 }
 
 .project-content {
