@@ -58,3 +58,30 @@ header nav ul a {
     text-decoration: none;
     padding: 25px;
 }
+
+/* Section Style */
+
+section {
+    padding: 60px;
+}
+
+/* Hero/Jumbotron */
+
+.hero {
+    height: 400px;
+    background-image: url(../images/hero-bg.JPG);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero div {
+    font-size: 30px;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
