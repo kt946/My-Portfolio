@@ -134,10 +134,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .project-card a {
-    border: 5px solid var(--primary-color);
+    border:5px solid var(--primary-color);
+    margin-bottom: 40px;
 }
 
 .project-content {
@@ -147,6 +149,7 @@ section {
 .project-content img{
     width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 .project-text {
@@ -155,5 +158,10 @@ section {
     background-color: var(--primary-color);
     padding: 10px 20px;
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
+    font-size: 1.55vw;
+}
+
+.project-card a:not(:first-child) {
+    width: 48%;
 }
