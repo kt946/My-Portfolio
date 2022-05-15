@@ -106,6 +106,7 @@ section {
     font-size: 18px;
     flex: 2 80%;
     padding: 0 40px;
+    line-height: 1.5;
 }
 
 .about-me-text p:first-child {
@@ -114,4 +115,45 @@ section {
 
 .about-me p span {
     color: #f5cd1c;
+}
+
+/* Work */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-section {
+    padding: 0 40px;
+    flex: 2 80%;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card a {
+    border: 5px solid var(--primary-color);
+}
+
+.project-content {
+    position: relative;
+}
+
+.project-content img{
+    width: 100%;
+    height: auto;
+}
+
+.project-text {
+    font-size: 25px;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 50px;
 }
