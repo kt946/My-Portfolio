@@ -49,20 +49,29 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-right: 80px;
+    margin: 15px 80px 15px 0;
 }
 
 header nav ul a {
     color: var(--primary-color);
-    font-size: 27px;
+    font-size: 25px;
     text-decoration: none;
-    padding: 25px;
+    padding: 5px;
+    margin: 0 15px;
 }
 
 /* Section style */
 
 section {
     padding: 60px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: right;
+    border-right: 5px solid var(--primary-color);
+    flex: 1 20%;
+    padding-right: 20px;
 }
 
 /* Hero/Jumbotron */
@@ -87,14 +96,6 @@ section {
 }
 
 /* About Me section */
-
-.section-title {
-    font-size: 30px;
-    text-align: right;
-    border-right: 5px solid var(--primary-color);
-    flex: 1 20%;
-    padding-right: 20px;
-}
 
 .about-me {
     display: flex;
@@ -134,7 +135,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .project-card a {
@@ -164,4 +164,33 @@ section {
 
 .project-card a:not(:first-child) {
     width: 48%;
+}
+
+/* Contact Me section */
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 2 80%;
+    padding: 0 40px;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contact-info ul li a {
+    font-size: 25px;
+    padding: 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
 }
