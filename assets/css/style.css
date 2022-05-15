@@ -54,12 +54,12 @@ header nav ul {
 
 header nav ul a {
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 27px;
     text-decoration: none;
     padding: 25px;
 }
 
-/* Section Style */
+/* Section style */
 
 section {
     padding: 60px;
@@ -78,10 +78,40 @@ section {
     align-items: flex-end;
 }
 
-.hero div {
-    font-size: 30px;
+.hero div h2 {
+    font-size: 40px;
     color: var(--tertiary-color);
     background-color: var(--primary-color);
     text-align: center;
     padding: 10px;
+}
+
+/* About Me section */
+
+.section-title {
+    font-size: 30px;
+    text-align: right;
+    border-right: 5px solid var(--primary-color);
+    flex: 1 20%;
+    padding-right: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-me-text {
+    font-size: 18px;
+    flex: 2 80%;
+    padding: 0 40px;
+}
+
+.about-me-text p:first-child {
+    font-size: 26px;
+}
+
+.about-me p span {
+    color: #f5cd1c;
 }
