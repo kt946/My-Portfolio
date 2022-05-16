@@ -186,11 +186,12 @@ section {
     align-items: center;
     justify-content: space-around;
     list-style: none;
+    line-height: 1.8;
 }
 
 .contact-info ul li a {
     font-size: 25px;
-    padding: 15px;
+    padding: 5px;
     color: var(--secondary-color);
     text-decoration: none;
 }
@@ -304,7 +305,6 @@ section {
 @media screen and (max-width: 575px) {
     header nav ul {
         flex-direction: column;
-        width: 100%;
         line-height: 1.5;
     }
 
@@ -338,6 +338,5 @@ section {
 
     .contact-info ul {
         flex-direction: column;
-        line-height: 1.8;
     }
 }
