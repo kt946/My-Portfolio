@@ -260,6 +260,14 @@ section {
         border: 3px solid var(--primary-color);
     }
 
+    .project-text {
+        font-size: 1.8vw;
+    }
+    
+    .contact-me {
+        padding-bottom: 40px;
+    }
+
     .contact-info ul li a {
         font-size: 20px;
     }
@@ -269,28 +277,55 @@ section {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 768px) {
+    .hero div {
+        flex: 100%;
+    }
+
     .hero div h2 {
+        padding: 5px;
         font-size: 30px;
     }
 
-    .section-title {
-        font-size: 25px;
+    .about-me-text {
+        font-size: 17px;
+    }
+
+    .about-me-text p:first-child {
+        font-size: 24px;
     }
 
     .project-text {
         font-size: 18px;
-    }
-    
-    .contact-me {
-        padding-bottom: 50px;
     }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
 @media screen and (max-width: 575px) {
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .hero div h2 {
+        font-size: 25px;
+    }
+
     .about-me-text, .project-section, .contact-info {
-        padding: 0 20px;
+        padding: 0 15px;
+    }
+
+    .about-me-text {
+        font-size: 16px;
+    }
+
+    .about-me-text p:first-child {
+        font-size: 22px;
     }
 
     .project-card a:not(:first-child) {
@@ -299,5 +334,10 @@ section {
 
     .project-text {
         bottom: 10px;
+    }
+
+    .contact-info ul {
+        flex-direction: column;
+        line-height: 1.8;
     }
 }
