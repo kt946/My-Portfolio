@@ -164,12 +164,13 @@ section {
     width: 100%;
     height: auto;
     vertical-align: middle;
+    object-fit: cover;
 }
 
 .project-text {
     color: var(--tertiary-color);
     background-color: var(--primary-color);
-    padding: 7px 20px;
+    padding: 3px 15px;
     position: absolute;
     bottom: 30px;
     border-top-right-radius: 10px;
@@ -335,7 +336,7 @@ section {
     }
     
     .project-text p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -373,14 +374,6 @@ section {
 
     .project-text {
         bottom: 10px;
-    }
-
-    .project-text h3 {
-        font-size: 20px;
-    }
-    
-    .project-text p {
-        font-size: 16px;
     }
 
     .contact-info ul {
