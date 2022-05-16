@@ -36,6 +36,8 @@ header h1 {
     font-weight: bold;
     font-size: 50px;
     background-color: var(--primary-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 header h1 a {
@@ -237,6 +239,8 @@ section {
         font-size: 40px;
         width: 100%;
         text-align: center;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     header h1 a {
