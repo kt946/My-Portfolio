@@ -59,14 +59,12 @@ header nav ul li a {
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--header-color);
     border-radius: 10px;
-    text-shadow: none;
 }
 
 /* Section style */
@@ -217,14 +215,12 @@ section {
     padding: 10px;
     color: var(--primary-color);
     text-decoration: none;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .contact-info ul li a:hover {
     background: var(--primary-color);
     color: var(--tertiary-color);
     border-radius: 10px;
-    text-shadow: none;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
