@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3ea6ff;
+    --primary-color: #3e8de3;
     --secondary-color: #9c9c9c;
     --tertiary-color: #131514;
     --header-color: black;
@@ -84,7 +84,7 @@ section {
 
 .section-title {
     color: var(--title-color);
-    font-size: 30px;
+    font-size: 35px;
     text-align: right;
     border-right: 5px solid var(--primary-color);
     flex: 1 20%;
@@ -148,7 +148,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    height: 25vw;
+    height: 28vw;
     overflow: hidden;
     position: relative;
 }
@@ -163,7 +163,7 @@ section {
 }
 
 .project-img img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .project-label {
@@ -184,6 +184,10 @@ section {
 }
 
 /* Contact Me section */
+
+#contact-me-section {
+    align-items: center;
+}
 
 .contact-info ul {
     display: flex;
@@ -214,11 +218,11 @@ section {
 @media screen and (max-width: 980px) {
     header {
         justify-content: center;
-        padding: 25px 0 0 0;
+        padding: 0;
     }
 
     header h1 {
-        padding: 10px 0;
+        padding: 8px 0;
         font-size: 40px;
         width: 100%;
         text-align: center;
@@ -231,18 +235,16 @@ section {
     }
 
     header nav {
-        padding: 12px 0;
+        padding: 15px 0;
     }
 
     header nav ul {
-        width: 100%;
         justify-content: center;
         margin: 0;
     }
 
     header nav ul li a {
         font-size: 22px;
-        text-align: center;
     }
 
     .section-title {
@@ -251,11 +253,10 @@ section {
         text-align: center;
         margin-bottom: 25px;
         padding: 15px 0;
-        flex: 1 100%;
     }
     
     section {
-        padding: 15px 30px;
+        padding: 10px 60px;
     }
 
     .hero div h2 {
@@ -266,28 +267,32 @@ section {
         flex: 100%
     }
 
-    .project-card {
-        gap: 17px;
+    .project-section {
+        gap: 20px;
     }
 
-    .project-card a {
-        border: 3px solid var(--primary-color);
+    .project-card:not(:first-child) {
+        height: 16vh;
     }
 
-    .project-label h3 {
-        font-size: 26px;
+    .project-img img {
+        width: 110%;
+    }
+
+    .project-label {
+        font-size: 2vw;
     }
     
     .project-label p {
-        font-size: 18px;
+        font-size: 1.5vw;
     }
     
-    .contact-me {
-        padding-bottom: 40px;
+    .contact-info {
+        margin-bottom: 40px;
     }
 
     .contact-info ul li a {
-        font-size: 20px;
+        font-size: 22px;
     }
     
 }
@@ -295,8 +300,8 @@ section {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 768px) {
-    .hero div {
-        flex: 100%;
+    .hero {
+        justify-content: center;
     }
 
     .hero div h2 {
@@ -312,12 +317,8 @@ section {
         font-size: 24px;
     }
 
-    .project-label h3 {
-        font-size: 22px;
-    }
-    
-    .project-label p {
-        font-size: 16px;
+    .contact-info {
+        padding: 0;
     }
 }
 
@@ -325,8 +326,11 @@ section {
 
 @media screen and (max-width: 575px) {
     header nav ul {
-        flex-direction: column;
         line-height: 1.5;
+    }
+
+    section {
+        padding: 10px 15px;
     }
 
     .section-title {
@@ -338,7 +342,7 @@ section {
     }
 
     .about-me-text, .project-section, .contact-info {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .about-me-text {
@@ -349,12 +353,16 @@ section {
         font-size: 22px;
     }
 
-    .project-card a:not(:first-child) {
-        width: 100%;
+    .project-card:not(:first-child) {
+        flex: 100%;
     }
 
     .project-label {
-        bottom: 10px;
+        font-size: 3.8vw;
+    }
+
+    .project-label p {
+        font-size: 3.35vw;
     }
 
     .contact-info ul {
