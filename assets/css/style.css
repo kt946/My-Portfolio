@@ -310,7 +310,7 @@ section {
     }
 
     .about-me-text {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .about-me-text p:first-child {
@@ -326,7 +326,11 @@ section {
 
 @media screen and (max-width: 575px) {
     header nav ul {
-        line-height: 1.5;
+        line-height: 1.8;
+    }
+
+    header nav ul li a {
+        margin: 0;
     }
 
     section {
@@ -345,20 +349,22 @@ section {
         padding: 0 20px;
     }
 
-    .about-me-text {
-        font-size: 16px;
-    }
-
-    .about-me-text p:first-child {
-        font-size: 22px;
+    .project-card {
+        height: 200px;
     }
 
     .project-card:not(:first-child) {
         flex: 100%;
+        height: 200px;
+    }
+
+    .project-img img {
+        width: 150%;
     }
 
     .project-label {
         font-size: 3.8vw;
+        margin-bottom: 20px;
     }
 
     .project-label p {
