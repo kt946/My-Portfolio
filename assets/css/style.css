@@ -304,6 +304,10 @@ section {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 768px) {
+    section {
+        padding: 10px 15px;
+    }
+
     .hero {
         justify-content: center;
     }
@@ -324,13 +328,8 @@ section {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
 @media screen and (max-width: 575px) {
-
     header nav ul li a {
         margin: 5px;
-    }
-
-    section {
-        padding: 10px 15px;
     }
 
     .section-title {
