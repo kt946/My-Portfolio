@@ -91,6 +91,16 @@ section {
     padding-right: 20px;
 }
 
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-padding {
+    flex: 3 75%;
+    padding: 0 40px;
+}
+
 /* Hero/Jumbotron section */
 
 .hero {
@@ -114,16 +124,6 @@ section {
 }
 
 /* About Me section */
-
-.content-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-padding {
-    flex: 3 75%;
-    padding: 0 40px;
-}
 
 .about-me-text {
     font-size: 18px;
@@ -151,6 +151,7 @@ section {
     height: 28vw;
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
 }
 
 .project-card:not(:first-child) {
@@ -222,7 +223,7 @@ section {
     }
 
     header h1 {
-        padding: 8px 0;
+        padding: 7px 0;
         font-size: 40px;
         width: 100%;
         text-align: center;
@@ -235,7 +236,8 @@ section {
     }
 
     header nav {
-        padding: 15px 0;
+        padding: 10px 0;
+        line-height: 1.8;
     }
 
     header nav ul {
@@ -244,7 +246,7 @@ section {
     }
 
     header nav ul li a {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .section-title {
@@ -280,11 +282,11 @@ section {
     }
 
     .project-label {
-        font-size: 2vw;
+        font-size: 20px;
     }
     
     .project-label p {
-        font-size: 1.5vw;
+        font-size: 15px;
     }
     
     .contact-info {
@@ -325,12 +327,9 @@ section {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
 @media screen and (max-width: 575px) {
-    header nav ul {
-        line-height: 1.8;
-    }
 
     header nav ul li a {
-        margin: 0;
+        margin: 5px;
     }
 
     section {
@@ -363,12 +362,12 @@ section {
     }
 
     .project-label {
-        font-size: 3.8vw;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
     .project-label p {
-        font-size: 3.35vw;
+        font-size: 15px;
     }
 
     .contact-info ul {
