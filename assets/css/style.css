@@ -39,8 +39,9 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 55px;
     background-color: var(--primary-color);
+    padding: 5px 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -114,11 +115,11 @@ section {
 }
 
 .hero div h2 {
-    font-size: 40px;
+    font-size: 45px;
     color: var(--header-color);
     background-color: var(--primary-color);
     text-align: center;
-    padding: 10px;
+    padding: 10px 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
@@ -263,6 +264,7 @@ section {
 
     .hero div h2 {
         font-size: 35px;
+        margin-bottom: 20px;
     }
     
     .about-me-text, .project-section, .contact-info {
@@ -306,11 +308,6 @@ section {
         justify-content: center;
     }
 
-    .hero div h2 {
-        padding: 5px;
-        font-size: 30px;
-    }
-
     .about-me-text {
         font-size: 18px;
     }
@@ -337,10 +334,6 @@ section {
     }
 
     .section-title {
-        font-size: 25px;
-    }
-
-    .hero div h2 {
         font-size: 25px;
     }
 
