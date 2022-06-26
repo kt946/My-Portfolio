@@ -1,6 +1,6 @@
 :root {
     --primary-color: #3e8de3;
-    --secondary-color: #9c9c9c;
+    --secondary-color: #b7b7b7;
     --tertiary-color: #131514;
     --header-color: black;
     --title-color: #d7d8da;
@@ -14,12 +14,15 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--tertiary-color);
+    background: url(../images/page-bg.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center top;
 }
 
 body {
     color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--tertiary-color);
 }
 
 /* Header and Navigation style */
@@ -85,11 +88,12 @@ section {
 
 .section-title {
     color: var(--title-color);
-    font-size: 35px;
+    font-size: 28px;
     text-align: right;
     border-right: 5px solid var(--primary-color);
     flex: 1 20%;
     padding-right: 20px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .content-section {
@@ -106,9 +110,8 @@ section {
 
 .hero {
     height: 400px;
-    background-image: url(../images/hero-bg.JPG);
+    background: url(../images/hero-bg.png) center;
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -120,7 +123,7 @@ section {
     background-color: var(--primary-color);
     text-align: center;
     padding: 10px 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0);
     border-radius: 10px;
 }
 
@@ -129,6 +132,7 @@ section {
 .about-me-text {
     font-size: 18px;
     line-height: 1.5;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .about-me-text p:first-child {
@@ -139,9 +143,9 @@ section {
 /* Work section*/
 
 .project-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
 }
 
 .project-card {
@@ -149,15 +153,15 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    height: 28vw;
+    height: 14vw;
     overflow: hidden;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.project-card:not(:first-child) {
-    flex: 45%;
-    height: 12vw;
+.project-card:first-child {
+    grid-column: 1 / 3;
+    height: 28vw;
 }
 
 .project-card:hover {
@@ -183,6 +187,7 @@ section {
 
 .project-label p {
     font-size: 1.2vw;
+    font-style: italic;
 }
 
 /* Contact Me section */
@@ -272,11 +277,11 @@ section {
     }
 
     .project-section {
-        gap: 20px;
+        gap: 1rem;
     }
 
-    .project-card:not(:first-child) {
-        height: 16vh;
+    .project-card {
+        height: 16vw;
     }
 
     .project-img img {
@@ -298,7 +303,6 @@ section {
     .contact-info ul li a {
         font-size: 22px;
     }
-    
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -320,6 +324,10 @@ section {
         font-size: 24px;
     }
 
+    .project-card {
+        height: 18vw;
+    }
+
     .contact-info {
         padding: 0;
     }
@@ -333,33 +341,33 @@ section {
     }
 
     .section-title {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .about-me-text, .project-section, .contact-info {
         padding: 0 20px;
     }
 
-    .project-card {
-        height: 200px;
+    .project-section {
+        grid-template-columns: auto;
     }
 
-    .project-card:not(:first-child) {
-        flex: 100%;
-        height: 200px;
+    .project-card {
+        height: 40vw;
+    }
+
+    .project-card:first-child {
+        grid-column: 1 / 2;
+        height: 40vw;
     }
 
     .project-img img {
-        width: 150%;
+        width: 130%;
     }
 
     .project-label {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .project-label p {
-        font-size: 15px;
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
     }
 
     .contact-info ul {
