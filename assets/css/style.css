@@ -4,6 +4,7 @@
     --tertiary-color: #131514;
     --header-color: black;
     --title-color: #d7d8da;
+    --hero-color: #FFD236;
 }
 
 * {
@@ -15,14 +16,14 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--tertiary-color);
-    background: url(../images/page-bg.jpg) no-repeat fixed;
+    background: url(../images/page-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center top;
 }
 
 body {
     color: var(--secondary-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 /* Header and Navigation style */
@@ -41,6 +42,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Racing Sans One', cursive;
     font-weight: bold;
     font-size: 55px;
     background-color: var(--primary-color);
@@ -61,7 +63,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin: 15px 80px 15px 0;
+    margin: 15px 90px 15px 0;
 }
 
 header nav ul li a {
@@ -93,7 +95,7 @@ section {
     border-right: 5px solid var(--primary-color);
     flex: 1 20%;
     padding-right: 20px;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
 .content-section {
@@ -118,13 +120,12 @@ section {
 }
 
 .hero div h2 {
-    font-size: 45px;
-    color: var(--header-color);
-    background-color: var(--primary-color);
+    font-family: 'Playball', cursive;
+    font-size: 6rem;
+    color: var(--hero-color);
     text-align: center;
     padding: 10px 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0);
-    border-radius: 10px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 /* About Me section */
@@ -132,7 +133,7 @@ section {
 .about-me-text {
     font-size: 18px;
     line-height: 1.5;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
 .about-me-text p:first-child {
@@ -149,23 +150,37 @@ section {
 }
 
 .project-card {
+    position: relative;
+    height: 14vw;
+}
+
+.project-content {
     border: 5px solid var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    height: 14vw;
+    height: 100%;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
 }
 
+.overlay-bg {
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.overlay-bg:hover {
+    opacity: 0.4;
+}
+
 .project-card:first-child {
     grid-column: 1 / 3;
     height: 28vw;
-}
-
-.project-card:hover {
-    opacity: 0.70;
 }
 
 .project-img img {
@@ -268,7 +283,7 @@ section {
     }
 
     .hero div h2 {
-        font-size: 35px;
+        font-size: 5rem;
         margin-bottom: 20px;
     }
     
@@ -314,6 +329,10 @@ section {
 
     .hero {
         justify-content: center;
+    }
+
+    .hero div h2 {
+        font-size: 4.5rem;
     }
 
     .about-me-text {
