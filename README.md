@@ -1,6 +1,6 @@
 # My-Portfolio
 
-For this week's challenge, I built a personalized portfoilo website using my knowledge of HTML, CSS, flexbox, and media queries. Most of the projects and links are placeholders except for the group project "Movie & TV Watchlist" and the "Run Buddy" project.
+For this week's challenge, I built a personalized portfoilo website using my knowledge of HTML, CSS, flexbox, and media queries. This portfolio allows employers to learn about who I am and showcase my skills and projects. Additional technologies include Google Fonts and Font Awesome icons. Projects that are not yet completed are indicated with a "Placeholder" message when hovered over. 
 
 ## Screenshot of the completed portfolio:
 
