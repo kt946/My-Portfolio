@@ -89,7 +89,7 @@ section {
 
 .section-title {
     color: whitesmoke;
-    font-size: 28px;
+    font-size: 2rem;
     text-align: right;
     border-right: 5px solid var(--primary-color);
     flex: 1 20%;
@@ -136,7 +136,9 @@ section {
 }
 
 .about-me-text p:first-child {
-    font-size: 26px;
+    font-size: 2rem;
+    color: #FFE485;
+    font-family: 'Source Code Pro', monospace;
 }
 
 /* Work section*/
@@ -346,7 +348,7 @@ section {
     }
 
     .about-me-text p:first-child {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
     .project-card {
@@ -391,7 +393,7 @@ section {
     }
 
     .project-label {
-        font-size: 1rem;
+        font-size: 1.15rem;
         margin-bottom: 0.8rem;
     }
 
