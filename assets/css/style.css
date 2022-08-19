@@ -100,6 +100,7 @@ section {
 .content-section {
     display: flex;
     flex-wrap: wrap;
+    scroll-margin-top: 5rem;
 }
 
 .flex-padding {
@@ -395,5 +396,11 @@ section {
 
     .contact-info ul {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .content-section {
+        scroll-margin-top: 7.5rem;
     }
 }
