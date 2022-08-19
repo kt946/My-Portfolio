@@ -209,7 +209,7 @@ section {
 }
 
 .project-label p {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-style: italic;
 }
 
@@ -252,8 +252,7 @@ section {
     }
 
     header h1 {
-        padding: 7px 0;
-        font-size: 40px;
+        font-size: 30px;
         width: 100%;
         text-align: center;
         border-top-right-radius: 0;
@@ -274,8 +273,9 @@ section {
         margin: 0;
     }
 
-    header nav ul li a {
-        font-size: 20px;
+    header nav ul li a,
+    .contact-info ul li a {
+        font-size: 18px;
     }
 
     .section-title {
@@ -316,15 +316,11 @@ section {
     }
     
     .project-label p {
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .contact-info {
         margin-bottom: 40px;
-    }
-
-    .contact-info ul li a {
-        font-size: 22px;
     }
 }
 
@@ -344,11 +340,11 @@ section {
     }
 
     .about-me-text {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .about-me-text p:first-child {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .project-card {
@@ -393,7 +389,7 @@ section {
     }
 
     .project-label {
-        font-size: 1.15rem;
+        font-size: 1rem;
         margin-bottom: 0.8rem;
     }
 
