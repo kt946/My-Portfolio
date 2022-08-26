@@ -13,15 +13,15 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--tertiary-color);
-    background: url(../images/page-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center top;
 }
 
 body {
     color: var(--tertiary-color);
     font-family: 'Montserrat', Helvetica, sans-serif;
+    background-color: #17192A;
+    background: url(../images/page-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 
 /* Header and Navigation style */
@@ -42,8 +42,7 @@ header {
 header h1 {
     font-family: 'Racing Sans One', cursive;
     font-weight: bold;
-    font-size: 55px;
-    padding: 5px 0;
+    font-size: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background: linear-gradient(to right, var(--primary-color),
@@ -67,7 +66,7 @@ header nav ul {
 
 header nav ul li a {
     color: var(--tertiary-color);
-    font-size: 25px;
+    font-size: 24px;
     text-decoration: none;
     padding: 5px 10px;
     margin: 10px;
@@ -89,7 +88,7 @@ section {
 
 .section-title {
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: right;
     border-right: 5px solid var(--primary-color);
     flex: 1 20%;
@@ -137,7 +136,7 @@ section {
 }
 
 .about-me-text p:first-child {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #FFE485;
     font-family: 'Source Code Pro', monospace;
 }
@@ -211,7 +210,6 @@ section {
 
 .project-label p {
     font-size: 1.1vw;
-    font-style: italic;
 }
 
 /* Contact Me section */
@@ -226,11 +224,11 @@ section {
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 .contact-info ul li a {
-    font-size: 25px;
+    font-size: 24px;
     padding: 5px 10px;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -265,7 +263,7 @@ section {
     }
 
     header nav {
-        padding: 10px 0;
+        padding: 5px 0;
         line-height: 1.8;
     }
 
@@ -365,11 +363,15 @@ section {
     }
 
     .section-title {
-        font-size: 24px;
+        font-size: 1.4rem;
     }
 
     .about-me-text, .project-section, .contact-info {
         padding: 0 20px;
+    }
+
+    .about-me-text p:first-child {
+        font-size: 1.3rem;
     }
 
     .project-section {
@@ -401,6 +403,6 @@ section {
 
 @media screen and (max-width: 435px) {
     .content-section {
-        scroll-margin-top: 7.5rem;
+        scroll-margin-top: 7rem;
     }
 }
